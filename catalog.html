@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Магазин Барбершопа</title>
+  <title>Магазин</title>
 </head>
 
 <body>
@@ -11,10 +11,11 @@
     <div class="container">
       <nav class="main-navigation">
         <ul>
+          <li><img src="" alt="Barbershop"></li>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Прайс-лист</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li class="nav-active"><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
@@ -23,11 +24,111 @@
       </div>
     </div>
   </header>
-  <main class="container">
-    <h1>Средства для ухода</h1>
-    
-    
-    
+  <main class="container content-container">
+     <header class="content-header">
+        <h1>Средства для ухода</h1>
+        <nav class="breadcrumbs">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#" class="crumb-active">Средства для ухода</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="filter">
+          <section class="filter-item">
+            <h2 class="left-column-title">Производители:</h2>
+            <input type="checkbox" id="baxocal" checked>
+            <label for="baxocal">Baxter of California</label>
+            <input type="checkbox" id="mrnat">
+            <label for="mrnat">Mr Natty</label>
+            <input type="checkbox" id="suav" checked>
+            <label for="suav">Suavecito</label>
+            <input type="checkbox" id="malgo">
+            <label for="malgo">Malin+Goetz</label>
+            <input type="checkbox" id="mur">
+            <label for="mur">Murray’s</label>
+            <input type="checkbox" id="amcr" checked>
+            <label for="amcr">American Crew</label>
+          </section>
+          <section class="filter-item">
+            <h2 class="left-column-title">Группы товаров:</h2>
+            <button class="btn group-btn">Показать</button>
+          </section>
+      </div>
+      <section class="goods">
+        <article class="goods-item baxocal">
+          <img src="" alt="">
+          <p>
+            <i>Набор для путешествий</i><br>
+            "Baxter of California"
+          </p>
+          <div class="price">
+            <p>2 900 руб.</p>
+            <button class="btn buy-btn">Купить</button>
+          </div>
+        </article>
+        <article class="goods-item baxocal">
+          <img src="" alt="">
+          <p>
+            <i>Увлажняющий кондиционер</i><br>
+            "Baxter of California"</p>
+          <div class="price">
+            <p>750 руб.</p>
+            <button class="btn buy-btn">Купить</button>
+          </div>
+        </article>
+        <article class="goods-item suav">
+          <img src="" alt="">
+          <p>
+            <i>Гель для волос</i><br>
+            "Suavecito"
+          </p>
+          <div class="price">
+            <p>290 руб.</p>
+            <button class="btn buy-btn">Купить</button>
+          </div>
+        </article>
+        <article class="goods-item amcr">
+          <img src="" alt="">
+          <p>
+            <i>Глина для укладки волос</i><br>
+            "American Crew"
+          </p>
+          <div class="price">
+            <p>500 руб.</p>
+            <button class="btn buy-btn">Купить</button>
+          </div>
+        </article>
+        <article class="goods-item amcr">
+          <img src="" alt="">
+          <p>
+            <i>Гель для волос</i><br>
+            "American Crew"
+          </p>
+          <div class="price">
+            <p>300 руб.</p>
+            <button class="btn buy-btn">Купить</button>
+          </div>
+        </article>
+        <article class="goods-item baxocal">
+          <img src="" alt="">
+          <p>
+            <i>Набор для бритья</i><br>
+            "Baxter of California"
+          </p>
+          <div class="price">
+            <p>3 900 руб.</p>
+            <button class="btn buy-btn">Купить</button>
+          </div>
+        </article>
+      </section>
+      <nav class="pages">
+        <a href="#" class="pages-number">1</a>
+        <a href="#" class="pages-number page-active">2</a>
+        <a href="#" class="pages-number">3</a>
+        <a href="#" class="pages-number">4</a>
+      </nav>
   </main>
   <footer class="main-footer">
     <div class="container">
