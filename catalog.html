@@ -11,7 +11,7 @@
     <div class="container">
       <nav class="main-navigation">
         <ul>
-          <li><a href="index.html"><img src="http://placehold.it/150x50" alt="Barbershop"></a></li>
+          <li><a href="index.html"><img src="http://placehold.it/111x24" alt="Barbershop"></a></li>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Прайс-лист</a></li>
@@ -31,50 +31,50 @@
           <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Магазин</a></li>
-            <li><a href="#" class="active">Средства для ухода</a></li>
+            <li><span class="active">Средства для ухода</span></li>
           </ul>
         </nav>
       </header>
-      <div class="filter">
-          <section class="filter-item">
-            <h2 class="left-column-title">Производители:</h2>
-            <ul>
-              <li>
-                <input type="checkbox" id="item-1" checked>
-                <label for="item-1">Baxter of California</label>
-              </li>
-              <li>
-                <input type="checkbox" id="item-2">
-                <label for="item-2">Mr Natty</label>
-              </li>
-              <li>
-                <input type="checkbox" id="item-3" checked>
-                <label for="item-3">Suavecito</label>
-              </li>
-              <li>
-                <input type="checkbox" id="item-4">
-                <label for="item-4">Malin+Goetz</label>
-              </li>
-              <li>
-                <input type="checkbox" id="item-5">
-                <label for="item-5">Murray’s</label>
-              </li>
-              <li>
-                <input type="checkbox" id="item-6" checked>
-                <label for="item-6">American Crew</label>
-              </li>
-            </ul>
-          </section>
-          <section class="filter-item">
-            <h2 class="left-column-title">Группы товаров:</h2>
-            <a href="#" class="btn group-btn">Показать</a>
-          </section>
-      </div>
+      <form class="filter" action="http://echo.htmlacademy.ru" method="post">
+        <div class="filter-left-column">
+          <h2 class="section-title">Производители:</h2>
+          <ul>
+            <li>
+              <input type="checkbox" id="item-1" name="manufacturer" value="Baxter of California" checked>
+              <label for="item-1">Baxter of California</label>
+            </li>
+            <li>
+              <input type="checkbox" id="item-2" name="manufacturer" value="Mr Natty">
+              <label for="item-2">Mr Natty</label>
+            </li>
+            <li>
+              <input type="checkbox" id="item-3" name="manufacturer" value="Suavecito" checked>
+              <label for="item-3">Suavecito</label>
+            </li>
+            <li>
+              <input type="checkbox" id="item-4" name="manufacturer" value="Malin+Goetz">
+              <label for="item-4">Malin+Goetz</label>
+            </li>
+            <li>
+              <input type="checkbox" id="item-5" name="manufacturer" value="Murray’s">
+              <label for="item-5">Murray’s</label>
+            </li>
+            <li>
+              <input type="checkbox" id="item-6" name="manufacturer" value="American Crew" checked>
+              <label for="item-6">American Crew</label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter-left-column">
+          <h2 class="section-title">Группы товаров:</h2>
+        </div>            
+        <button type="submit" class="btn filter-btn">Показать</button>
+      </form>
       <section class="products">
         <article class="product-item">
           <a href="product-item.html"><img src="http://placehold.it/220x165" alt=""></a>
           <p>
-            <span class="product-name">Набор для путешествий</span><br>
+            <span class="product-group">Набор для путешествий</span><br>
             "Baxter of California"
           </p>
           <div class="product-price">
@@ -85,7 +85,7 @@
         <article class="product-item">
           <a href="#"><img src="http://placehold.it/220x165" alt=""></a>
           <p>
-            <span class="product-name">Увлажняющий кондиционер</span><br>
+            <span class="product-group">Увлажняющий кондиционер</span><br>
             "Baxter of California"
           </p>
           <div class="product-price">
@@ -96,7 +96,7 @@
         <article class="product-item">
           <a href="#"><img src="http://placehold.it/220x165" alt=""></a>
           <p>
-            <span class="product-name">Гель для волос</span><br>
+            <span class="product-group">Гель для волос</span><br>
             "Suavecito"
           </p>
           <div class="product-price">
@@ -107,7 +107,7 @@
         <article class="product-item">
           <a href="#"><img src="http://placehold.it/220x165" alt=""></a>
           <p>
-            <span class="product-name">Глина для укладки волос</span><br>
+            <span class="product-group">Глина для укладки волос</span><br>
             "American Crew"
           </p>
           <div class="product-price">
@@ -118,7 +118,7 @@
         <article class="product-item">
           <a href="#"><img src="http://placehold.it/220x165" alt=""></a>
           <p>
-            <span class="product-name">Гель для волос</span><br>
+            <span class="product-group">Гель для волос</span><br>
             "American Crew"
           </p>
           <div class="product-price">
@@ -129,7 +129,7 @@
         <article class="product-item">
           <a href="#"><img src="http://placehold.it/220x165" alt=""></a>
           <p>
-            <span class="product-name">Набор для бритья</span><br>
+            <span class="product-group">Набор для бритья</span><br>
             "Baxter of California"
           </p>
           <div class="product-price">
@@ -140,7 +140,7 @@
       </section>
       <nav class="pagination">
         <a href="#" class="page-number">1</a>
-        <a href="#" class="page-number page-active">2</a>
+        <span class="page-number page-active">2</span>
         <a href="#" class="page-number">3</a>
         <a href="#" class="page-number">4</a>
       </nav>
