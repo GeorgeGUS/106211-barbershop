@@ -106,7 +106,8 @@ h2 {
   margin-right: 20px;
   margin-bottom: 20px;
   width: 220px;
-  background: #fff;
+  vertical-align: top;
+  background: #fff;  
   outline: 1px solid green; /* для наглядности */
 }
 
@@ -114,18 +115,27 @@ h2 {
   margin-right: 0;
 }
 
+.product-image {
+  display: block;
+  height: 165px;
+}
+
 .product-outline {
   padding: 16px;/* размер по макету */
-  padding-top: 3px;/* размер по макету */
+  padding-top: 6px;/* размер по макету */
 }
 
 .product-name{
   display: inline-block;
   margin-bottom: 15px;
-  line-height: normal;
+  line-height: normal;  
 /*  outline: 1px solid green;*/
 }
 
+.product-name-title {
+  text-transform: none;
+/*  font-stretch: condensed;*/
+}
 
 .product-price {
   width: 188px;/* размер по макету+1px */
@@ -150,7 +160,7 @@ h2 {
 .product-photo-big {
   margin-bottom: 20px;
   height: 500px;
-/*  outline: 1px solid green; */
+  outline: 1px solid green; /* для наглядности */
 }
 
 .product-photo-small {
@@ -158,7 +168,7 @@ h2 {
   width: 140px;
   height: 150px;
   margin-right: 20px;
-/*  outline: 1px solid green; */
+  outline: 1px solid green; /* для наглядности */
 }
 
 .product-photo-small:last-child {
