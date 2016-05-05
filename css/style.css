@@ -1,12 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   text-transform: uppercase;
-  color: #000;
+  color: #ffffff;
+  background: #000000 url(../img/barbershop-bg.jpg) no-repeat center top;
 }
 
 h1 {
@@ -27,7 +28,8 @@ h2 {
 
 .main-header {
   margin-bottom: 60px;
-/*  background-color: #000;*/
+  color: #ffffff;  
+  background-color: #000000;
 }
 
 .container {
@@ -39,13 +41,32 @@ h2 {
 .main-navigation {
   float: left;
   width: 780px;
-  min-height: 70px;
+/*  height: 70px;*/
+}
+
+.main-navigation a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+  font-size: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
 }
 
 .user-block {
   float: right;
   width: 140px;
-  min-height: 70px;
+  height: 70px;
 }
 
 .index-logo {
@@ -63,6 +84,14 @@ h2 {
   float: left;
   width: 300px;
   margin-right: 20px;
+  text-align: center;
+}
+
+.features-title {
+  display: inline-block;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  font-size: 30px;
 }
 
 .features-item:last-child {
@@ -93,7 +122,39 @@ h2 {
 .filter {
   float: left;
   margin-right: 20px;
-  width: 200px;
+  width: 220px;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.filter legend {
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-stretch: condensed;
+}
+
+ul.decompressed-list li{
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.filter input{
+  vertical-align: top;
+}
+
+.filter label {
+  display: inline-block;
+  margin-left: 20px;
+  font-stretch: condensed;
+  vertical-align: middle;
+}
+
+.filter button {
+  margin-top: 30px;
 }
 
 .products {
@@ -134,7 +195,7 @@ h2 {
 
 .product-name-title {
   text-transform: none;
-/*  font-stretch: condensed;*/
+  font-stretch: condensed;
 }
 
 .product-price {
